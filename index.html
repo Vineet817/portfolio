@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rust Developer Portfolio</title>
+    <meta name="description" content="Portfolio of a skilled Rust developer specializing in high-performance, memory-safe applications" />
+    <meta name="author" content="Rust Developer" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <span class="text-rust-orange">&lt;</span>
+          RustDev
+          <span class="text-rust-orange">/&gt;</span>
+        </a>
+        <div class="desktop-nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="mobile-menu-btn">
+          <span class="menu-icon"></span>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="metal-pattern"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>
+            <span>Hi, I'm </span>
+            <span class="text-rust-orange">Rust Developer</span>
+          </h1>
+          
+          <div class="terminal-container">
+            <div class="terminal-header">
+              <div class="terminal-button red"></div>
+              <div class="terminal-button yellow"></div>
+              <div class="terminal-button green"></div>
+              <div class="terminal-title">Terminal</div>
+            </div>
+            <div class="terminal-text">
+              <span class="text-rust-orange">$</span> <span id="typed-text"></span>
+            </div>
+          </div>
+          
+          <div class="hero-buttons">
+            <a href="#projects" class="rust-btn">View Projects</a>
+            <a href="#contact" class="rust-btn-outline">Contact Me</a>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container section-container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a passionate Rust developer with expertise in building high-performance, memory-safe applications. 
+              My journey with Rust began in 2018, and I've been consistently amazed by its power and elegance.
+            </p>
+            <p>
+              I specialize in systems programming, WebAssembly, and backend development. My approach combines Rust's 
+              performance benefits with clean architecture principles to deliver robust software solutions.
+            </p>
+            <p>
+              When I'm not coding, I contribute to open-source Rust projects and write technical articles about Rust
+              programming patterns and best practices.
+            </p>
+          </div>
+          
+          <div class="skills-container">
+            <h3>Technical Skills</h3>
+            
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Languages</h4>
+                <ul>
+                  <li><span class="skill-dot"></span>Rust</li>
+                  <li><span class="skill-dot"></span>C/C++</li>
+                  <li><span class="skill-dot"></span>TypeScript</li>
+                  <li><span class="skill-dot"></span>Python</li>
+                </ul>
+              </div>
+              
+              <div class="skill-category">
+                <h4>Frameworks</h4>
+                <ul>
+                  <li><span class="skill-dot"></span>Actix-web</li>
+                  <li><span class="skill-dot"></span>Tokio</li>
+                  <li><span class="skill-dot"></span>Rocket</li>
+                  <li><span class="skill-dot"></span>Wasm-bindgen</li>
+                </ul>
+              </div>
+              
+              <div class="skill-category">
+                <h4>Tools</h4>
+                <ul>
+                  <li><span class="skill-dot"></span>Cargo</li>
+                  <li><span class="skill-dot"></span>Docker</li>
+                  <li><span class="skill-dot"></span>Git</li>
+                  <li><span class="skill-dot"></span>CI/CD</li>
+                </ul>
+              </div>
+              
+              <div class="skill-category">
+                <h4>Specialties</h4>
+                <ul>
+                  <li><span class="skill-dot"></span>WebAssembly</li>
+                  <li><span class="skill-dot"></span>Embedded Systems</li>
+                  <li><span class="skill-dot"></span>Microservices</li>
+                  <li><span class="skill-dot"></span>Performance Optimization</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="rust-quote">
+              <p>"Rust combines low-level performance with high-level safety, making it ideal for systems that can't afford to fail."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+      <div class="container section-container">
+        <h2 class="section-title">Projects</h2>
+        
+        <div class="project-filters">
+          <button class="project-filter active" data-filter="All">All</button>
+          <button class="project-filter" data-filter="Library">Library</button>
+          <button class="project-filter" data-filter="Web">Web</button>
+          <button class="project-filter" data-filter="CLI">CLI</button>
+          <button class="project-filter" data-filter="Embedded">Embedded</button>
+          <button class="project-filter" data-filter="Game">Game</button>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Project cards will be inserted here via JavaScript -->
+        </div>
+        
+        <div class="no-projects" style="display: none;">
+          <p>No projects found in this category.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container section-container">
+        <h2 class="section-title">Let's Connect</h2>
+        
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p>
+              I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+            </p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h3>Email</h3>
+                  <a href="mailto:contact@rustdev.com">contact@rustdev.com</a>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h3>GitHub</h3>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/rustdev</a>
+                </div>
+              </div>
+              
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h3>Discord</h3>
+                  <p>@rustdev</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="terminal-container contact-form-container">
+            <div class="terminal-header">
+              <div class="terminal-button red"></div>
+              <div class="terminal-button yellow"></div>
+              <div class="terminal-button green"></div>
+              <div class="terminal-title">contact.rs</div>
+            </div>
+            
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name">// Your name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="rust-input"
+                  placeholder="fn your_name() -> String { ... }"
+                />
+              </div>
+              
+              <div class="form-group">
+                <label for="email">// Your email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="rust-input"
+                  placeholder="let email = String::from(&quot;...&quot;);"
+                />
+              </div>
+              
+              <div class="form-group">
+                <label for="message">// Your message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows="4"
+                  class="rust-input"
+                  placeholder="/* Type your message here */"
+                ></textarea>
+              </div>
+              
+              <button type="submit" class="rust-btn full-width" id="submit-btn">
+                Send Message
+              </button>
+              
+              <div class="form-success" style="display: none;">
+                Thank you for your message! I'll get back to you soon.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a href="#" class="navbar-brand">
+              <span class="text-rust-orange">&lt;</span>
+              RustDev
+              <span class="text-rust-orange">/&gt;</span>
+            </a>
+            <p>Building robust systems with Rust.</p>
+          </div>
+          
+          <div class="footer-social">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="mailto:contact@rustdev.com" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> RustDev. All rights reserved.</p>
+          
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
